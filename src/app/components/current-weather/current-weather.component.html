@@ -1,0 +1,19 @@
+<ng-container *ngIf="!isLoading">
+    <div class="d-flex justify-content-center bg-belyaev">
+        <div>
+            <div class="text-center">
+                <div class="display-4">{{ city }}, {{ country }}</div>
+                <div class="font-weight-light h4">{{ date | date: "fullDate" }}</div>
+                <div class="font-weight-light h5">{{ date | date: "HH:mm:ss" }}</div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <div class="font-weight-light h5 mb-3">{{ description }}</div>
+                <div id="icon">
+                    <img class="w-50" [src]="'assets/images/' + icon + '.png'" alt="Weather icon" />
+                </div>
+                <div class="display-2 font-weight-bold mt-4">{{ temperature }} °C</div>
+            </div>
+        </div>
+    </div>
+</ng-container>

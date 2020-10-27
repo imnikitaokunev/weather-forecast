@@ -1,0 +1,10 @@
+@media (max-width: 1199px) {
+    .bg-belyaev {
+        background: none;
+    }
+}
+@media (min-width: 1200px) {
+    .bg-belyaev {
+        background: url("/assets/images/background.png") no-repeat right;
+    }
+}
